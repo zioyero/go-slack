@@ -7,7 +7,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/slack-go/slack"
+	"github.com/zioyero/go-slack"
 )
 
 func main() {

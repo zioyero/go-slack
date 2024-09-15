@@ -1,5 +1,4 @@
-Slack API in Go [![Go Reference](https://pkg.go.dev/badge/github.com/slack-go/slack.svg)](https://pkg.go.dev/github.com/slack-go/slack)
-===============
+# Slack API in Go [![Go Reference](https://pkg.go.dev/badge/github.com/zioyero/go-slack.svg)](https://pkg.go.dev/github.com/zioyero/go-slack)
 
 This is the original Slack library for Go created by Norberto Lopes, transferred to a GitHub organization.
 
@@ -12,16 +11,17 @@ calls, as well as the Real-Time Messaging protocol over websocket, in
 a fully managed way.
 
 ## Project Status
+
 There is currently no major version released.
 Therefore, minor version releases may include backward incompatible changes.
 
-See [CHANGELOG.md](https://github.com/slack-go/slack/blob/master/CHANGELOG.md) or [Releases](https://github.com/slack-go/slack/releases) for more information about the changes.
+See [CHANGELOG.md](https://github.com/zioyero/go-slack/blob/master/CHANGELOG.md) or [Releases](https://github.com/zioyero/go-slack/releases) for more information about the changes.
 
 ## Installing
 
-### *go get*
+### _go get_
 
-    $ go get -u github.com/slack-go/slack
+    $ go get -u github.com/zioyero/go-slack
 
 ## Example
 
@@ -31,7 +31,7 @@ See [CHANGELOG.md](https://github.com/slack-go/slack/blob/master/CHANGELOG.md) o
 import (
 	"fmt"
 
-	"github.com/slack-go/slack"
+	"github.com/zioyero/go-slack"
 )
 
 func main() {
@@ -56,7 +56,7 @@ func main() {
 import (
     "fmt"
 
-    "github.com/slack-go/slack"
+    "github.com/zioyero/go-slack"
 )
 
 func main() {
@@ -72,19 +72,17 @@ func main() {
 
 ## Minimal Socket Mode usage:
 
-See https://github.com/slack-go/slack/blob/master/examples/socketmode/socketmode.go
-
+See https://github.com/zioyero/go-slack/blob/master/examples/socketmode/socketmode.go
 
 ## Minimal RTM usage:
 
 As mentioned in https://api.slack.com/rtm - for most applications, Socket Mode is a better way to communicate with Slack.
 
-See https://github.com/slack-go/slack/blob/master/examples/websocket/websocket.go
-
+See https://github.com/zioyero/go-slack/blob/master/examples/websocket/websocket.go
 
 ## Minimal EventsAPI usage:
 
-See https://github.com/slack-go/slack/blob/master/examples/eventsapi/events.go
+See https://github.com/zioyero/go-slack/blob/master/examples/eventsapi/events.go
 
 ## Socketmode Event Handler (Experimental)
 
@@ -93,9 +91,10 @@ When using socket mode, dealing with an event can be pretty lengthy as it requir
 Instead, you can use `SocketmodeHandler` much like you use an HTTP handler to register which event you would like to listen to and what callback function will process that event when it occurs.
 
 See [./examples/socketmode_handler/socketmode_handler.go](./examples/socketmode_handler/socketmode_handler.go)
+
 ## Contributing
 
-You are more than welcome to contribute to this project.  Fork and
+You are more than welcome to contribute to this project. Fork and
 make a Pull Request, or create an Issue if you see any problem.
 
 Before making any Pull Request please run the following:

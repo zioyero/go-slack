@@ -2,8 +2,8 @@ package socketmode
 
 import (
 	"context"
-	"github.com/slack-go/slack"
-	"github.com/slack-go/slack/slackevents"
+	"github.com/zioyero/go-slack"
+	"github.com/zioyero/go-slack/slackevents"
 )
 
 type SocketmodeHandler struct {
